@@ -181,7 +181,7 @@ search.addEventListener("click", () => {
         div3.appendChild(forecastCard);
       });
 
-
+      document.getElementById("div1place").value="";
 
     })
     .catch((data) => {
