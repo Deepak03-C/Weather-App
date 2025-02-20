@@ -93,6 +93,50 @@ search.addEventListener("click", () => {
       let visibility = forecast.visibility/1000;
       document.getElementById("km").innerHTML=`<p id="km">${visibility} km</p>`;
 
+      if(forecast.weather[0].description.includes("clouds")){
+        let img = document.getElementById("seconddiv");
+        img.style.backgroundImage="url('./assest/cloudy.jpg')";
+        img.style.backgroundRepeat="no-repeat";
+        img.style.backgroundSize="cover";
+      }
+      else if(forecast.weather[0].description=="clear sky"){
+        let img = document.getElementById("seconddiv");
+        img.style.backgroundImage="url('./assest/ClearSky.jpg')";
+        img.style.backgroundRepeat="no-repeat";
+        img.style.backgroundSize="cover";
+      }
+      else if(forecast.weather[0].description=="light rain"||forecast.weather[0].description=="moderate rain"||forecast.weather[0].description=="heavy intensity rain"||forecast.weather[0].description=="very heavy rain"||forecast.weather[0].description=="extreme rain"||forecast.weather[0].description=="freezing rain"){
+        let img = document.getElementById("seconddiv");
+        img.style.backgroundImage="url('./assest/rain.jpg')";
+        img.style.backgroundRepeat="no-repeat";
+        img.style.backgroundSize="cover";
+      }
+      else if(forecast.weather[0].description=="thunderstorm with light rain"||forecast.weather[0].description=="thunderstorm with rain"||forecast.weather[0].description=="thunderstorm with heavy rain"||forecast.weather[0].description=="thunderstorm with drizzle"||forecast.weather[0].description=="thunderstorm"){
+        let img = document.getElementById("seconddiv");
+        img.style.backgroundImage="url('./assest/thunderstrom.jpg')";
+        img.style.backgroundRepeat="no-repeat";
+        img.style.backgroundSize="cover";
+      }
+      else if(forecast.weather[0].description=="light snow"||forecast.weather[0].description=="snow"||forecast.weather[0].description=="heavy snow"||forecast.weather[0].description=="sleet"||forecast.weather[0].description=="shower sleet"||forecast.weather[0].description=="light rain and snow"||forecast.weather[0].description=="rain and snow"||forecast.weather[0].description=="light shower snow"||forecast.weather[0].description=="shower snow"||forecast.weather[0].description=="heavy shower snow"){
+        let img = document.getElementById("seconddiv");
+        img.style.backgroundImage="url('./assest/snow.jpg')";
+        img.style.backgroundRepeat="no-repeat";
+        img.style.backgroundSize="cover";
+      }
+      else if(forecast.weather[0].description=="mist"||forecast.weather[0].description=="smoke"||forecast.weather[0].description=="haze"||forecast.weather[0].description=="sand/dust whirls"||forecast.weather[0].description=="fog"){
+        let img = document.getElementById("seconddiv");
+        img.style.backgroundImage="url('./assest/fog.jpg')";
+        img.style.backgroundRepeat="no-repeat";
+        img.style.backgroundSize="cover";
+      }
+      else if(forecast.weather[0].description=="sand"||forecast.weather[0].description=="dust"||forecast.weather[0].description=="volcanic ash"||forecast.weather[0].description=="squalls"||forecast.weather[0].description=="tornado"){
+        let img = document.getElementById("seconddiv");
+        img.style.backgroundImage="url('./assest/windy.jpg')";
+        img.style.backgroundRepeat="no-repeat";
+        img.style.backgroundSize="cover";
+      }
+
+
 
       let dailyForecast = {};
 
