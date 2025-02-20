@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="maindiv">
+      <div id="seconddiv">
+        <div id="div1">
+          <br />
+          <input
+            type="text"
+            name=""
+            id="div1place"
+            placeholder="Search for places.."
+          />
+          <a id="search"
+            ><i class="fa-solid fa-magnifying-glass" id="mag"></i
+          ></a>
+          <br />
+          <img src="" alt="" id="divimage" height="200px" width="200px" />
+          <br />
+          <h1 id="div1h1">12<sup>o</sup></h1>
+          <br />
+          <h3 id="div1h3">Monday,16:00</h3>
+          <br />
+          <h4 id="div1h4"></h4>
+          <br />
+          <h4 id="div1h41">Mostly Cloudy</h4>
+          <i class="fa-solid fa-cloud" id="cloud"></i>
+          <br />
+          <h4 id="div1h42">Rain</h4>
+          <i class="fa-solid fa-droplet" id="rain"></i>
+          <br />
+          <img
+            src="./assest/image3.jpg"
+            alt=""
+            height="100px"
+            width="300px"
+            id="image2"
+          />
+          <h4 id="imgcity">City Name</h4>
+        </div>
+
+        <div id="div2">
+          <section id="nav">
+            <a href="#" id="today">Today</a>
+            <span class="line"></span>
+            <a href="#" id="week">Week</a>
+            <span class="line"></span>
+          </section>
+          <section id="div2sec1">
+            <span id="city">Madurai</span>
+            <span id="date">06.12.2024</span>
+            <h1 id="deg">20<sup>o</sup></h1>
+            <h2 id="weather">Cloudly</h2>
+            <section id="rep">
+              <span id="wind">Wind Speed : 6.1 mph</span>
+              <i class="fa-solid fa-wind" id="air"></i>
+              <br />
+              <br />
+              <span id="humi">Humidity : 90%</span>
+              <i class="fa-solid fa-droplet" id="drop"></i>
+            </section>
+          </section>
+        </div>
+
+        <div id="div3">
+          <div id="daywise">
+            <!-- <section id="day1" class="day">
+              <p>sun</p>
+              <img src="" alt="">
+              <p>deg</p>
+            </section>
+
+            <section id="day2" class="day">
+              <p>mon</p>
+              <img src="" alt="">
+              <p>deg</p>
+            </section>
+
+            <section id="day3" class="day">
+              <p>tue</p>
+              <img src="" alt="">
+              <p>deg</p>
+            </section>
+
+            <section id="day4" class="day">
+              <p>wed</p>
+              <img src="" alt="">
+              <p>deg</p>
+            </section>
+
+            <section id="day5" class="day">
+              <p>thu</p>
+              <img src="" alt="">
+              <p>deg</p>
+            </section> -->
+          </div>
+          <br />
+          <br />
+
+          <h3>Todays Highlight</h3>
+          <div id="report">
+            <section id="rainchance" class="reports">
+              <h3>Rain Chance</h3>
+              <p id="rainchance2">5</p>
+            </section>
+            <section id="windstatus" class="reports">
+              <h3>Wind Status</h3>
+              <p id="speed">7.70km/h</p>
+              <p id="winddeg">deg</p>
+            </section>
+            <section id="sunstatus" class="reports">
+              <h3>Sunrise & Sunset</h3>
+              <section id="sunrise">
+                <img
+                  src="../assest/sunrise.jpg"
+                  alt=""
+                  height="40px"
+                  width="40px"
+                />
+                <span id="sunrisetime">6:35</span>
+              </section>
+              <section id="sunset">
+                <img
+                  src="../assest/sunset.jpg"
+                  alt=""
+                  height="40px"
+                  width="40px"
+                />
+                <span id="sunsettime">5:42 </span>
+              </section>
+            </section>
+            <section id="humidity" class="reports">
+              <h3 id="humidity1">Humidity</h3>
+              <p id="humiditypercent">12</p>
+            </section>
+            <section id="visibility" class="reports">
+              <h3>Visibility</h3>
+              <p id="km">5.2km</p>
+            </section>
+            <section id="airquality" class="reports">
+              <h3>Air Quality</h3>
+              <p id="airqua">5</p>
+              <p id="airquadesc">Bad</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/c0416689b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

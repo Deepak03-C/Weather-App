@@ -1,0 +1,336 @@
+/* *{
+    padding: 0px;
+    margin: 0px;
+}
+#maindiv{
+    height: 100vh;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#mainsec{
+    border: 1px solid black;
+    padding: 20px;
+    height: 90vh;
+    background-color: rgb(242, 243, 244 );
+    justify-items: center;
+    align-content: center;
+    margin: 20px;
+    background-image: url(../assest/tree-desert-white-clouds-daytime.jpg);
+    background-size: cover;
+    animation-duration: 1s;
+    
+}
+#mainsec h1{
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    color:rgb(70,130,180)
+}
+#mainsec input{
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#mainsec button{
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+@keyframes slideup{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-900px);
+    }
+
+}
+
+#weather{
+    height: 90vh;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    display: none;
+    background-color: blue;
+} */
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#maindiv{
+    border: 10px solid green;
+    height: 100vh;
+    padding: 20px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+}
+#seconddiv{
+    border: 5px solid blue;
+    background-color: cornsilk;
+    height: 95vh;
+}
+#div1{
+    border: 5px solid red;
+    width: 20%;
+    height: 87vh;
+    padding: 30px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+#div1 input{
+    border-radius: 10px;
+    padding: 5px;
+    height: 30px;
+    text-align: center;
+}
+#search{
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    margin-left: 85%;
+    margin-top: -35px;
+}
+#div1 #mag{
+    margin-top: -27px;
+    margin-left: 5px;
+}
+#div1 #div1h1{
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-left: 30px;
+}
+#div1 #div1h3{
+    font-size: 200%;
+}
+#div1 #div1h4{
+    border: 2px solid gray;
+}
+#cloud{
+    margin-top: -18px;
+    color: gray;
+}
+#div1h41{
+    margin-left: 30px;
+    font-size: 120%;
+}
+#div1h42{
+    margin-left: 30px;
+}
+#rain{
+    margin-top: -20px;
+    font-size: 120%;
+    color: aqua;
+}
+#image2{
+    border-radius: 20px;
+}
+#div1 h5{
+    margin-top: -55px;
+    margin-left: 90px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 101%;
+}
+#divimage{
+    background-color: yellow;
+}
+#imgcity{
+    margin-top: -50px;
+    margin-left: 110px;
+    color: aliceblue;
+}
+
+/*daily report css*/
+
+#div2{
+    height: 95vh;
+    border: 5px solid black;
+    width: 75.5%;
+    margin-left: 24.2%;
+    margin-top: -49.5%;
+    
+}
+#div2sec1{
+    padding: 60px;
+    /* display: none; */
+}
+#div2 #city{
+    font-weight: lighter;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-left: 10%;
+}
+#div2 #date{
+    font-weight: lighter;
+    font-size: 51px;
+    font-family: sans-serif;
+    margin-left: 40%;
+}
+#div2 #deg{
+    font-size: 100px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 5%;
+}
+#div2 #weather{
+    text-align: center;
+    font-size: 210%;
+    font-weight: lighter;
+}
+#nav{
+    padding: 30px;
+}
+#div2 #today{
+    text-decoration: none;
+    font-size: 165%;
+    margin-left: 50px;
+    padding: 2px;
+    border: 3px solid black;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    color: black;
+}
+#div2 #week{
+    text-decoration: none;
+    font-size: 165%;
+    margin-left: 50px;
+    padding: 2px;
+    color: gray;
+}
+
+#wind{
+    margin-left: 75%;
+    font-size: 23px;
+}
+#humi{
+    margin-top: -10%;
+    margin-left: 75%;
+    font-size: 25px;
+}
+#rep{
+    margin-top: -14%;
+}
+
+/* week report css*/
+
+#div3{
+    height: 71vh;
+    border: 5px solid maroon;
+    width: 63.5%;
+    margin-left: 24.2%;
+    margin-top: -49.5%;
+    padding: 90px;
+    /* display: none; */
+    
+}
+#daywise{
+    display: flex;
+    justify-content: space-evenly;
+    gap:50px;
+
+}
+.day{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 9px;
+    margin-left: -7%;
+    height: 60px;
+    background-color: aliceblue;
+}
+
+#report{
+    display: flex;
+    border: 1px solid black;
+    background-color: red;
+    /* justify-content: space-around; */
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    padding: 30px;
+}
+.reports{
+    padding: 15px;
+    border: 2px solid greenyellow;
+    background-color: white;
+    flex-basis: 20%;
+    border-radius: 10px;
+    gap: 20px;
+    margin-left: 30px;
+    height: 100px;
+}
+#rainchance h3{
+    color: gray;
+}
+#rainchance p{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+#windstatus h3{
+    color: gray;
+}
+#windstatus #speed{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+#windstatus #winddeg{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+#sunstatus h3{
+    color: gray;
+}
+
+#humidity h3{
+    color: gray;
+}
+#humidity p{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 40px;
+}
+#visibility h3{
+    color: gray;
+}
+#visibility #km{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+}
+#visibility #d{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+#airquality h3{
+    color: gray;
+}
+#airquality p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: 10px;
+}
+#div3{
+    display: none;
+}
+
+
